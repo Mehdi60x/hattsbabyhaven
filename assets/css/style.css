@@ -1,0 +1,688 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Section titres */
+
+h1 { 
+color: rgb(30, 45, 74);
+margin: 4px;
+margin-top: 20px;
+font-size: 45px;
+text-align: center;
+border-radius: 10px;
+font-weight: 900;
+}
+
+h2 {
+  color: rgb(145, 144, 127);
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 0 2px 0;
+  font-weight: 700;
+ }
+ 
+h4 {
+  margin: 0;
+ }
+
+/* Fin Section titres */
+
+ .error{
+   color: rgb(197, 19, 19);
+   font-size: 0.8rem;
+   padding: 10px;
+ }
+ 
+.iconenav i {
+padding: 20px;
+margin-right: 10px;
+}
+
+/* Section page connection */
+.pageconnection {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  flex-direction: column;
+  height: 450px;
+}
+
+ .pageconnection input {
+margin: 10px;
+width: 300px;
+height: 40px;
+font-size:13px;
+border-radius: 2px;
+font-style: bold;
+ }
+ 
+ .pageconnection label {
+text-align: left;
+margin-left: 10px;
+ }
+
+.submitconnection {
+  background: rgb(147, 159, 201);
+  color: rgb(250, 246, 246);
+  font-size: 50px;
+  font-style: initial;
+  cursor: pointer;
+ }
+
+ .submitconnection:hover {
+  color:black;
+  transition: 1s;
+}
+
+ .connectionbg {
+  background-color: rgb(241, 239, 222);
+ }
+
+ .h1connection {
+  margin: 0%;
+  padding-top: 40px;
+  color: rgb(69, 61, 50);
+ }
+
+ .creeruncompte {
+  color: rgb(147, 159, 201);
+  font-weight: bold;
+  text-decoration: underline;
+
+ }
+ .creeruncompte:visited{
+  color: black;
+ }
+/*Fin section page connection */
+
+/* Section inscription */
+.h1inscription {
+  margin: 0%;
+  padding-top: 40px;
+  color: rgb(69, 61, 50);
+ }
+
+.formInscription {
+  display: flex;
+  flex-direction: column;
+ 
+  margin: auto;
+  align-items: center;
+  color: rgb(7, 8, 8);
+  text-align: left;
+ 
+  padding: 20px;
+}
+
+.formInscription input {
+  margin: 10px;
+  width: 300px;
+  height: 40px;
+  font-size:13px;
+  border-radius: 2px;
+  font-style: bold;
+   }
+
+.submitInscription {
+  background: rgb(147, 159, 201);
+  color: rgb(250, 246, 246);
+  cursor: pointer;
+ }
+
+ .submitInscription:hover {
+  color: black;
+  transition: 1s;
+}
+ .Inscriptionbg {
+  background-color: rgb(241, 239, 222);
+ }
+
+/* Fin section Inscription */
+
+/* Section Profil modification suppression compte */
+
+.formProfil {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  color: rgb(7, 8, 8);
+  text-align: left;
+
+  padding: 60px;
+  background-color: rgb(241, 239, 222);
+}
+
+.left , .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.h2 , .titreProfil {
+  
+  color: rgb(69, 61, 50);
+  font-size: 22px;
+  
+ }
+
+/* Fin section Profil modification suppression compte */
+
+/* Section Delete compte */
+#modal{
+  position: relative;
+}
+#open-delete-modal {
+  background: rgb(174, 6, 6);
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+
+  height: 40px;
+  font-size:13px;
+  border-radius: 2px;
+  font-style: bold;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputDelete{
+  padding: 10px;
+  background-color: rgb(174, 6, 6);
+  color: white;
+  font-weight: bold;
+}
+.alert{
+  padding: 10px;
+}
+#close-btn{
+  background: black;
+  color: white;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+
+/* Fin Section Delete compte */
+
+#main-image {
+background-color: rgb(241, 238, 239);
+}
+
+#main-image h2 {
+font-weight: normal;
+color: white;
+text-align: center;
+}
+
+#main-image img{
+width: 100%;
+height: 600px;
+filter: brightness(50%);
+position: relative;
+}
+
+/*wrapper regroupe h2 et button Par ici*/
+.wrapper{
+position: absolute;
+top: 41%;
+right: 20%;
+left: 20%;
+}
+
+.welcomeMessage {
+padding: 20px 0;
+font-size: 1.8rem;
+}
+
+a { 
+text-decoration: none;
+color:rgb(239, 245, 245);
+}
+
+a:visited{
+color:rgb(239, 245, 245);
+}
+
+.wrapper button {
+position: absolute;
+left: 43%;
+background: rgb(147, 159, 201);
+color: whitesmoke;
+transition: 0.3s;
+}
+
+
+nav ul {
+display: inline; right: auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none;
+    height: 50px;
+    color: white;
+    background: rgb(147, 159, 201);
+}
+
+#responsiveNav {
+  display: none;
+
+}
+
+/* grid container image 1 , 2 et 3 Biberon,Aide sommeil et gigoteuse */
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.grid{
+height: auto;
+width: 350px;
+border-radius: 5px;
+color: rgb(43, 45, 82); 
+font-weight: bold;
+}
+
+.biberon{
+background: rgb(205, 205, 194);
+}
+
+.sommeil{
+background: rgb(156, 187, 198);
+}
+
+.gigoteuse{
+background: rgb(163, 184, 163);
+}
+
+.imgContainer img {
+height: 250px;
+width: 350px;
+border-radius: 5px;
+}
+
+.productDescription {
+text-align: center;
+padding: 20px;
+}
+
+.productDescription h4 {
+margin-bottom: 10px;
+}
+
+.cta {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.cta a, .wrapper a {
+color: black;
+}
+
+.cta button, .wrapper button {
+border: 1px solid rgb(18, 17, 17);
+border-radius: 10px;
+background-color:rgb(249, 248, 245);
+padding: 10px 20px;
+}
+
+.h5 {
+font-size: 300px;
+color: white;
+}
+
+/* Descriptif couche abonnement */
+
+.bannerContainer {
+background: white;
+min-height: 500px;
+margin-top: 20px;
+}
+
+.bannerContainer h2 {
+margin: 50px auto;
+width: 95%;
+color: rgb(145, 144, 127);
+font-size: 1.8rem;
+}
+
+.advantagesContainer {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.advantagesContainer .cta button {
+margin-Bottom: 100px;
+}
+
+.advantage {
+display: flex;
+flex-direction: column;
+width: 250px;
+}
+
+.advantage img {
+height: 150px;
+padding: 10px;
+}
+
+.iconNumber p { 
+border-radius: 30px;
+width: 50px;
+text-align: center;
+background: rgb(95, 129, 144);
+color: white;
+font-size: 2rem;
+padding: 5px;
+margin: 2px auto;
+}
+
+.advantagesContent {
+text-align: center;
+padding: 20px;
+}
+
+.advantagesContent h5 {
+margin-bottom: 5px;
+font-size: 1.2rem;
+}
+
+/* Couche est soin bio */
+
+.containercouche {
+background-color: rgb(214, 225, 242);
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 90px;
+padding: 30px;
+height: auto;
+}
+
+.coucheContent {
+text-align: center;
+width: 35%;
+line-height: 40px;
+font-size: 1.8rem;
+border-radius: 10px;
+
+}
+
+.textPromoCouche {
+font-size: 1.4rem;
+}
+
+.coucheContent button {
+background-color:rgb(249, 249, 249);
+color: rgb(7, 7, 7);
+}
+
+.cta :hover {
+  background: rgb(147, 159, 201);
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+.titrecouche {
+color: white;
+font-weight:bold;
+font-size: 1.8rem;
+}
+
+.imageSoin img {
+height: 350px;
+width: 350px;
+border-radius: 10px;
+margin-bottom: 20px;
+margin-top: 20px;
+border: 5px solid white;
+}
+
+/* chauffe biberon */
+
+.imageChauffeBiberon img {
+height: 700px;
+width: 100%;
+margin: auto;
+}
+
+.imageChauffeBiberon {
+position: relative;
+}
+
+.chauffeBiberonContent {
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 70%;
+margin: 10px auto;
+line-height: 40px;
+font-size: 1.4rem;
+position: absolute;
+bottom: 2%;
+left: 2%;
+color: white;
+background: rgba(255, 255, 255, 0.172);
+border-radius: 10px;
+padding: 30px;
+}
+
+.titreChauffeBiberon {
+color: white;
+font-weight:bold;
+font-size: 1.9rem;
+}
+
+/* Politique service client */
+.productDescription {
+  font-weight: normal;
+}
+
+.TitreServiceClient {
+  font-size: 30px;
+}
+
+/*  Newsletter */
+.NewsLetter {
+background: rgba(195, 211, 224, 0.9);
+text-align: center;
+padding: 30px;
+
+margin-top: -5px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.NewsLetter img {
+height: 140px;
+}
+
+.TitreIV {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(39, 39, 68);
+  color: aliceblue;
+  padding: 30px;
+}
+
+.colonne {
+  display: flex;
+  flex-direction: column;
+  align-items: 20px;
+  margin-bottom: 20px;
+}
+
+.colonne h3 {
+  color:rgb(175, 193, 208);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.colonne h4 {
+  color: rgb(240, 240, 240);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  padding-top: 10px;
+}
+
+.contact-infos-detail p {
+  line-height: 0px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 0px 0px 10px 20px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+
+.colonne a {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(236, 232, 232);
+}
+
+.colonne a:hover {
+  color: rgb(175, 193, 208);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(175, 193, 208);
+}
+
+.contact-infos-detail div {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.fa-solid fa-address-card {
+  font-size: 16px;
+  line-height: 10px;
+  color: rgb(46, 46, 129);
+  margin-right: 20px;
+}
+/* Fin Footer */
+
+/* Responsive */
+@media screen and (max-width: 850px){
+  .wrapper h2{
+    font-size: 1.7rem;
+  }
+  .wrapper button{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+  } 
+}
+@media screen and (max-width: 980px) {
+ 
+  .chauffeBiberonContent p{
+    line-height: normal;
+    
+  }
+  .chauffeBiberonContent{
+    width: 60%;
+    padding: 10px;
+  } 
+
+ #responsiveNav {
+display: flex;
+flex-direction: column;  
+  }
+
+  nav ul {
+    display: none;
+    height: fit-content;
+  }
+
+}
+
+/* Fenêtre Modale */
+#modal-container {
+  display: none;
+  /* La fenêtre modale est cachée par défaut */
+  position: fixed;
+  /* Elle est positionnée par rapport à la fenêtre du navigateur */
+  z-index: 1;
+  /* Elle est au-dessus de tous les autres éléments de la page */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Pour permettre le défilement si nécessaire */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Un fond semi-transparent */
+}
+
+#modal {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-btn {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+

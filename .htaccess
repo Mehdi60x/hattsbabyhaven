@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^accueil$ /index.php
+RewriteRule ^inscription$ /controllers/registerController.php
+RewriteRule ^connexion$ /controllers/loginController.php
+RewriteRule ^produits$ /controllers/productController.php
+RewriteRule ^profil$ /controllers/profilController.php
+RewriteRule ^modifier-profil$$ /controllers/updateuserController.php
+RewriteRule ^deconnexion$ /controllers/logoutController.php
+
+
+
+#réecriture de l'url
